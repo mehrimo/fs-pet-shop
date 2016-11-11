@@ -72,8 +72,6 @@ else if (cmd === 'create') {
 }
 
 
-
-
 else {
   console.error(`Usage: ${node} ${file} read`);
   process.exit(1);
