@@ -76,3 +76,5 @@ else {
   console.error(`Usage: ${node} ${file} read`);
   process.exit(1);
 }
+
+  // "main": "restfulExpressServer.js",
