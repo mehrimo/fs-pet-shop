@@ -8,6 +8,11 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 8000;
 
+var morgan = require('morgan');
+app.use(morgan('short'));
+
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 app.get('/pets', function(req, res) {
   fs.readFile(petsPath, 'utf8', function(err, petsJSON) {
